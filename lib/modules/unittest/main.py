@@ -5,7 +5,7 @@ import os
 import types
 
 from . import loader, runner
-from .signals import installHandler
+#from .signals import installHandler
 
 __unittest = True
 
@@ -214,8 +214,8 @@ class TestProgram(object):
         self.test = loader.discover(start_dir, pattern, top_level_dir)
 
     def runTests(self):
-        if self.catchbreak:
-            installHandler()
+        #if self.catchbreak:
+        #    installHandler()
         if self.testRunner is None:
             self.testRunner = runner.TextTestRunner
         if isinstance(self.testRunner, (type, types.ClassType)):

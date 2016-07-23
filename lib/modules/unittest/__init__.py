@@ -63,7 +63,7 @@ from .loader import (TestLoader, defaultTestLoader, makeSuite, getTestCaseNames,
                      findTestCases)
 from .main import TestProgram, main
 from .runner import TextTestRunner, TextTestResult
-from .signals import installHandler, registerResult, removeResult, removeHandler
+#from .signals import installHandler, registerResult, removeResult, removeHandler
 
 # deprecated
 _TextTestResult = TextTestResult
